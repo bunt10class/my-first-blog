@@ -25,7 +25,11 @@ SECRET_KEY = '8jihh(m&0x@v9w75@22nn3n^f4ddf))ngd0n2#b!!5lv0b=@j4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','Bujhm.pythonanywhere.com','bunt10class.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1',
+                 'Bujhm.pythonanywhere.com',
+                 'bunt10class.pythonanywhere.com',
+                 'localhost',
+                 ]
 
 
 # Application definition
@@ -121,3 +125,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+LOGIN_REDIRECT_URL = '/'
